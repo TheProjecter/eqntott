@@ -1,0 +1,13 @@
+
+/*
+ *
+ *	Copyright (C) 1981, Regents of the University of California
+ *
+ *	All rights reserved
+ *
+ */
+
+#define nor(a,b) (!a&!b)
+ INORDER = a b;
+ OUTORDER = c;
+ c = nor (a, b);

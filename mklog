@@ -1,0 +1,49 @@
+Making all in src
+make[1]: Entering directory `/home/pjscott/hacking/eqntott/src'
+make  all-am
+make[2]: Entering directory `/home/pjscott/hacking/eqntott/src'
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT bnode.o -MD -MP -MF .deps/bnode.Tpo -c -o bnode.o bnode.c
+mv -f .deps/bnode.Tpo .deps/bnode.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT canon.o -MD -MP -MF .deps/canon.Tpo -c -o canon.o canon.c
+mv -f .deps/canon.Tpo .deps/canon.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT cover.o -MD -MP -MF .deps/cover.Tpo -c -o cover.o cover.c
+mv -f .deps/cover.Tpo .deps/cover.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT duple.o -MD -MP -MF .deps/duple.Tpo -c -o duple.o duple.c
+mv -f .deps/duple.Tpo .deps/duple.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT gram.o -MD -MP -MF .deps/gram.Tpo -c -o gram.o gram.c
+mv -f .deps/gram.Tpo .deps/gram.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT hash.o -MD -MP -MF .deps/hash.Tpo -c -o hash.o hash.c
+mv -f .deps/hash.Tpo .deps/hash.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT merge.o -MD -MP -MF .deps/merge.Tpo -c -o merge.o merge.c
+mv -f .deps/merge.Tpo .deps/merge.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT misc.o -MD -MP -MF .deps/misc.Tpo -c -o misc.o misc.c
+mv -f .deps/misc.Tpo .deps/misc.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT nt.o -MD -MP -MF .deps/nt.Tpo -c -o nt.o nt.c
+mv -f .deps/nt.Tpo .deps/nt.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT preprocess.o -MD -MP -MF .deps/preprocess.Tpo -c -o preprocess.o preprocess.c
+mv -f .deps/preprocess.Tpo .deps/preprocess.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT prexpr.o -MD -MP -MF .deps/prexpr.Tpo -c -o prexpr.o prexpr.c
+mv -f .deps/prexpr.Tpo .deps/prexpr.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT procargs.o -MD -MP -MF .deps/procargs.Tpo -c -o procargs.o procargs.c
+mv -f .deps/procargs.Tpo .deps/procargs.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT pterm.o -MD -MP -MF .deps/pterm.Tpo -c -o pterm.o pterm.c
+mv -f .deps/pterm.Tpo .deps/pterm.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT pterm_ops.o -MD -MP -MF .deps/pterm_ops.Tpo -c -o pterm_ops.o pterm_ops.c
+mv -f .deps/pterm_ops.Tpo .deps/pterm_ops.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT putpla.o -MD -MP -MF .deps/putpla.Tpo -c -o putpla.o putpla.c
+mv -f .deps/putpla.Tpo .deps/putpla.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT read_ones.o -MD -MP -MF .deps/read_ones.Tpo -c -o read_ones.o read_ones.c
+mv -f .deps/read_ones.Tpo .deps/read_ones.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT reduce.o -MD -MP -MF .deps/reduce.Tpo -c -o reduce.o reduce.c
+mv -f .deps/reduce.Tpo .deps/reduce.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT rmcvd.o -MD -MP -MF .deps/rmcvd.Tpo -c -o rmcvd.o rmcvd.c
+mv -f .deps/rmcvd.Tpo .deps/rmcvd.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT substitute.o -MD -MP -MF .deps/substitute.Tpo -c -o substitute.o substitute.c
+mv -f .deps/substitute.Tpo .deps/substitute.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT x.o -MD -MP -MF .deps/x.Tpo -c -o x.o x.c
+mv -f .deps/x.Tpo .deps/x.Po
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT yystuff.o -MD -MP -MF .deps/yystuff.Tpo -c -o yystuff.o yystuff.c
+make[2]: Leaving directory `/home/pjscott/hacking/eqntott/src'
+make[1]: Leaving directory `/home/pjscott/hacking/eqntott/src'

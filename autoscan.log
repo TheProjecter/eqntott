@@ -1,0 +1,50 @@
+autoscan: warning: missing AC_CHECK_HEADERS([libintl.h]) wanted by: 
+	src/y.tab.c:191
+autoscan: warning: missing AC_CHECK_HEADERS([malloc.h]) wanted by: 
+	src/y.tab.c:238
+autoscan: warning: missing AC_CHECK_HEADERS([stddef.h]) wanted by: 
+	src/y.tab.c:179
+autoscan: warning: missing AC_C_CONST wanted by: 
+	src/y.tab.c:373
+	src/y.tab.c:407
+	src/y.tab.c:415
+	src/y.tab.c:428
+	src/y.tab.c:439
+	src/y.tab.c:439
+	src/y.tab.c:451
+	src/y.tab.c:459
+	src/y.tab.c:467
+	src/y.tab.c:477
+	src/y.tab.c:487
+	src/y.tab.c:495
+	src/y.tab.c:505
+	src/y.tab.c:515
+	src/y.tab.c:524
+	src/y.tab.c:535
+	src/y.tab.c:668
+	src/y.tab.c:668
+	src/y.tab.c:674
+	src/y.tab.c:674
+	src/y.tab.c:700
+	src/y.tab.c:700
+	src/y.tab.c:706
+	src/y.tab.c:706
+	src/y.tab.c:823
+	src/y.tab.c:827
+	src/y.tab.c:847
+	src/y.tab.c:852
+	src/y.tab.c:856
+	src/y.tab.c:875
+	src/y.tab.c:880
+	src/y.tab.c:936
+	src/y.tab.c:949
+	src/y.tab.c:950
+	src/y.tab.c:951
+	src/y.tab.c:952
+	src/y.tab.c:957
+	src/y.tab.c:1032
+	src/y.tab.c:1036
+autoscan: warning: missing AC_FUNC_ALLOCA wanted by: 
+	src/y.tab.c:234
+autoscan: warning: missing AC_TYPE_SIZE_T wanted by: 
+	src/y.tab.c:175

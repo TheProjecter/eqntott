@@ -1,0 +1,5 @@
+INORDER = a b c d e;
+OUTORDER = z1 z2 z3;
+z1 = a|b|a;
+z2 = c;
+z3 = d|e;

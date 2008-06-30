@@ -1,0 +1,411 @@
+
+merge.c,71
+#define X(13,177
+find_index 20,272
+trymerge 78,1555
+merge 122,2489
+
+y.tab.h,453
+# define YYTOKENTYPE38,1653
+   enum yytokentype 41,1777
+     NAME 42,1799
+     INORDER 43,1816
+     OUTORDER 44,1836
+     PLANAME 45,1857
+     SYMONE 46,1877
+     SYMZERO 47,1896
+#define NAME 51,1943
+#define INORDER 52,1960
+#define OUTORDER 53,1980
+#define PLANAME 54,2001
+#define SYMONE 55,2021
+#define SYMZERO 56,2040
+	YYSTYPE;70,2222
+# define yystype 71,2251
+# define YYSTYPE_IS_DECLARED 72,2313
+# define YYSTYPE_IS_TRIVIAL 73,2344
+
+gram.y,74
+typedef union YYSTYPE62,
+	BNODE *bnodeval;bnodeval20,
+	int intval;21,
+
+procargs.c,614
+#define MAXSTR 11,137
+#define MAXARG 13,163
+#define NFILES 14,181
+char *ego;ego16,200
+int Argc 17,248
+char *Argv[Argv18,311
+int nfiles 19,369
+char *files[files20,430
+char *dash dash21,478
+char planame[planame22,496
+int r_flag 23,538
+int R_flag 24,580
+int s_flag 25,624
+int f_flag 26,665
+int g_flag 27,704
+int lisp 28,745
+int labels 29,785
+int need_grind 30,858
+int need_parse 31,911
+char *key key32,959
+char *defkey=defkey33,1010
+char *defkeyx defkeyx34,1075
+char *defkeyf=defkeyf35,1150
+char *defkeyfx=defkeyfx36,1202
+procargs 39,1268
+copyprefix(140,2896
+set_planame(147,3012
+
+version.c,21
+void version(12,143
+
+canon.c,58
+canon 17,271
+#define ZERO_BNODE 93,1704
+ecanon 96,1769
+
+config.h.in,720
+#undef HAVE_FORK4,120
+#undef HAVE_INTTYPES_H7,198
+#undef HAVE_MALLOC11,323
+#undef HAVE_MEMORY_H14,401
+#undef HAVE_STDINT_H17,481
+#undef HAVE_STDLIB_H20,561
+#undef HAVE_STRINGS_H23,642
+#undef HAVE_STRING_H26,723
+#undef HAVE_SYS_STAT_H29,805
+#undef HAVE_SYS_TYPES_H32,890
+#undef HAVE_UNISTD_H35,973
+#undef HAVE_VFORK38,1047
+#undef HAVE_VFORK_H41,1123
+#undef HAVE_WORKING_FORK44,1179
+#undef HAVE_WORKING_VFORK47,1241
+#undef PACKAGE50,1290
+#undef PACKAGE_BUGREPORT53,1385
+#undef PACKAGE_NAME56,1458
+#undef PACKAGE_STRING59,1538
+#undef PACKAGE_TARNAME62,1620
+#undef PACKAGE_VERSION65,1689
+#undef STDC_HEADERS68,1768
+#undef VERSION71,1821
+#undef malloc74,1908
+#undef pid_t77,1979
+#undef vfork80,2042
+
+x.c,79
+BNODE *exprs[exprs18,317
+PTERM *pts[pts19,362
+main 23,422
+grind 131,2434
+
+substitute.c,19
+substitute 19,198
+
+reduce.c,15
+reduce 15,171
+
+pterm_ops.c,178
+int cmppt 35,1019
+int cmpv 62,1391
+cmpptx 84,1767
+cmppth 98,2003
+PTERM *find_pterm find_pterm125,2514
+#define H(132,2754
+orpt 174,3569
+pthash 192,3893
+ptindex 212,4163
+
+cover.c,29
+cover 14,169
+extant 40,635
+
+bnode.c,162
+#define CHUNK 28,800
+static BNODE *freePtr freePtr29,819
+get_free 32,854
+new_bnode 49,1177
+void free_bnode 65,1429
+copy_bnode 76,1564
+check_bnode 90,1854
+
+misc.c,14
+store 14,127
+
+hash.c,29
+hash 14,132
+hsearch 47,937
+
+read_ones.c,61
+read_ones 24,481
+contradiction 112,2332
+compress 127,2603
+
+putpla.c,64
+putpla 16,237
+putpt 34,469
+putrpla 59,1022
+putSpla 115,2115
+
+pterm.c,140
+#define CHUNK 31,1027
+static PTERM *freePtr freePtr32,1046
+get_free 36,1111
+copy_pterm 68,1849
+new_pterm 91,2303
+free_pterm 111,2632
+
+hdr.h,21
+#define __HDR_H2,16
+
+x.h,1091
+#define __X_H10,117
+#define MAXSTR 14,153
+#define NINPUTS 16,173
+#define NOUTPUTS 17,193
+#define NPTERMS 18,214
+#define NTSIZE 19,236
+#define NSUBSTITUTE 20,268
+#define AND 22,292
+#define OR 23,307
+#define NOT 24,321
+#define ONE 25,336
+#define ZERO 26,351
+#define DONTCARE 27,367
+#define NAND 28,387
+#define NOR 29,403
+#define MIN_OUTPUT 31,419
+#define MIN_GNODE 32,483
+#define INPUT 34,541
+#define OUTPUT 35,605
+#define INTERNAL 36,622
+typedef short BIT;38,642
+struct Nt 40,662
+	char *name;name41,674
+	int isinput;42,708
+	int isoutput;43,753
+	int inord;44,800
+	int outord;45,838
+typedef struct Pterm 48,882
+	BIT *ptand;ptand49,905
+	BIT *ptor;ptor50,948
+	struct Pterm *next;next51,989
+	long andhash;52,1043
+	short index;53,1098
+	short cv;54,1143
+} PTERM;55,1177
+typedef struct Btreenode 57,1187
+	int value;58,1214
+	struct Btreenode *left;left59,1262
+	struct Btreenode *right;right60,1315
+	int mark;62,1382
+} BNODE;64,1400
+#define NIL_BNODE 66,1410
+#define NIL_PTERM 67,1442
+#define or3(69,1475
+#define and3(70,1528
+#define LINELEN 71,1581
+
+nt.c,249
+struct Nt nts[nts16,209
+struct Nt *inorder[inorder17,232
+struct Nt *outorder[outorder18,261
+int ninputs 19,291
+int noutputs 20,308
+nt_init 28,405
+nt_update 44,598
+nt_input 78,1270
+nt_output 107,1707
+nt_compar 132,2115
+nt_open 140,2207
+
+yystuff.c,451
+#define NERRORS 20,233
+#define NINBUF 21,299
+#define NUNBUF 22,359
+#define MAXFNAME 23,420
+#define MAXSTR 25,487
+int nerrors 28,541
+char yytext[yytext29,589
+static char yyfname[yyfname31,638
+static char yyinbuf[yyinbuf32,699
+static int yyninbuf 33,747
+static int yycharno 34,808
+static int yyunbuf[yyunbuf35,860
+static int yynunbuf 36,910
+static int yylineno 37,970
+yygetc(42,1095
+yyungetc 54,1352
+yyerror 68,1661
+yylex 170,3971
+
+rmcvd.c,18
+int rmcvd 12,138
+
+prexpr.c,112
+prexpr 12,138
+prlexpr 60,830
+prgexpr 109,1465
+prnode(194,2877
+static int c_node 225,3390
+new_num(227,3422
+
+preprocess.c,49
+#define CPREPROCESSOR 13,230
+preprocess(20,326
+
+duple.c,18
+int duple 14,159
+
+y.tab.c,4508
+#define YYBISON 47,2141
+#define YYBISON_VERSION 50,2182
+#define YYSKELETON_NAME 53,2235
+#define YYPURE 56,2290
+#define YYLSP_NEEDED 59,2332
+# define YYTOKENTYPE65,2393
+   enum yytokentype 68,2517
+     NAME 69,2539
+     INORDER 70,2556
+     OUTORDER 71,2576
+     PLANAME 72,2597
+     SYMONE 73,2617
+     SYMZERO 74,2636
+#define NAME 78,2683
+#define INORDER 79,2700
+#define OUTORDER 80,2720
+#define PLANAME 81,2741
+#define SYMONE 82,2761
+#define SYMZERO 83,2780
+	YYSTYPE;127,3494
+# define yystype 128,3524
+# define YYSTYPE_IS_DECLARED 129,3586
+# define YYSTYPE_IS_TRIVIAL 130,3617
+# undef short142,3770
+typedef YYTYPE_UINT8 yytype_uint8;146,3812
+typedef unsigned char yytype_uint8;148,3853
+typedef YYTYPE_INT8 yytype_int8;152,3916
+typedef signed char yytype_int8;155,4049
+typedef short int yytype_int8;157,4088
+typedef YYTYPE_UINT16 yytype_uint16;161,4148
+typedef unsigned short int yytype_uint16;163,4191
+typedef YYTYPE_INT16 yytype_int16;167,4261
+typedef short int yytype_int16;169,4302
+#  define YYSIZE_T 174,4381
+#  define YYSIZE_T 176,4436
+#  define YYSIZE_T 180,4642
+#  define YYSIZE_T 182,4675
+#define YYSIZE_MAXIMUM 186,4723
+#   define YY_(192,4869
+#  define YY_(196,4955
+# define YYUSE(202,5092
+# define YYUSE(204,5129
+# define YYID(209,5259
+YYID 214,5395
+#    define YYSTACK_ALLOC 232,5667
+#    define YYSTACK_ALLOC 236,5830
+#    define alloca 239,5950
+#    define YYSTACK_ALLOC 241,5986
+#      define _STDLIB_H 246,6250
+#  define YYSTACK_FREE(255,6397
+#   define YYSTACK_ALLOC_MAXIMUM 261,6794
+#  define YYSTACK_ALLOC 264,6876
+#  define YYSTACK_FREE 265,6909
+#   define YYSTACK_ALLOC_MAXIMUM 267,6971
+#    define _STDLIB_H 274,7255
+#   define YYMALLOC 278,7317
+#   define YYFREE 285,7584
+union yyalloc300,8067
+  yytype_int16 yyss;302,8083
+  YYSTYPE yyvs;303,8104
+# define YYSTACK_GAP_MAXIMUM 307,8201
+# define YYSTACK_BYTES(311,8349
+#   define YYCOPY(319,8609
+#   define YYCOPY(322,8716
+# define YYSTACK_RELOCATE(338,9207
+#define YYFINAL 352,9605
+#define YYLAST 354,9665
+#define YYNTOKENS 357,9727
+#define YYNNTS 359,9790
+#define YYNRULES 361,9844
+#define YYNSTATES 363,9902
+#define YYUNDEFTOK 366,9998
+#define YYMAXUTOK 367,10020
+#define YYTRANSLATE(369,10045
+static const yytype_uint8 yytranslate[yytranslate373,10221
+static const yytype_uint8 yyprhs[yyprhs407,12293
+static const yytype_int8 yyrhs[yyrhs415,12583
+static const yytype_uint8 yyrline[yyrline428,13235
+static const char *const yytname[yytname439,13660
+static const yytype_uint16 yytoknum[yytoknum451,14075
+static const yytype_uint8 yyr1[yyr1459,14334
+static const yytype_uint8 yyr2[yyr2467,14642
+static const yytype_uint8 yydefact[yydefact477,15045
+static const yytype_int8 yydefgoto[yydefgoto487,15448
+#define YYPACT_NINF 494,15643
+static const yytype_int8 yypact[yypact495,15667
+static const yytype_int8 yypgoto[yypgoto505,16065
+#define YYTABLE_NINF 514,16405
+static const yytype_int8 yytable[yytable515,16429
+static const yytype_uint8 yycheck[yycheck524,16829
+static const yytype_uint8 yystos[yystos535,17327
+#define yyerrok	544,17699
+#define yyclearin	545,17734
+#define YYEMPTY	546,17771
+#define YYEOF	547,17793
+#define YYACCEPT	549,17811
+#define YYABORT	550,17845
+#define YYERROR	551,17878
+#define YYFAIL	558,18116
+#define YYRECOVERING(560,18147
+#define YYBACKUP(562,18188
+#define YYTERROR	580,18616
+#define YYERRCODE	581,18635
+#define YYRHSLOC(588,18841
+# define YYLLOC_DEFAULT(590,18900
+#  define YY_LOCATION_PRINT(616,19813
+#  define YY_LOCATION_PRINT(621,19993
+# define YYLEX 629,20138
+# define YYLEX 631,20179
+#  define YYFPRINTF 639,20337
+# define YYDPRINTF(642,20374
+# define YY_SYMBOL_PRINT(648,20481
+yy_symbol_value_print 668,21023
+yy_symbol_print 700,21691
+yy_stack_print 726,22537
+# define YY_STACK_PRINT(740,22839
+yy_reduce_print 754,23249
+# define YY_REDUCE_PRINT(778,23849
+int yydebug;786,24078
+# define YYDPRINTF(788,24112
+# define YY_SYMBOL_PRINT(789,24137
+# define YY_STACK_PRINT(790,24192
+# define YY_REDUCE_PRINT(791,24229
+# define YYINITDEPTH 797,24363
+# define YYMAXDEPTH 808,24719
+#   define yystrlen 817,24840
+yystrlen 823,25024
+#   define yystpcpy 840,25319
+yystpcpy 847,25555
+yytnamerr 875,26296
+yysyntax_error 922,27355
+      enum { YYERROR_VERBOSE_ARGS_MAXIMUM 935,27703
+yydestruct 1032,30524
+int yychar;1075,31253
+YYSTYPE yylval;1078,31318
+int yynerrs;1081,31374
+yyparse 1093,31556
+#define YYPOPSTACK(1146,32709
+#  undef YYSTACK_RELOCATE1234,35126
+
+gram.y,212
+# define YYDEBUG 21,
+# undef YYERROR_VERBOSE26,
+# define YYERROR_VERBOSE 27,
+# define YYERROR_VERBOSE 29,
+# define YYTOKEN_TABLE 34,
+typedef union YYSTYPE38,
+	BNODE *bnodeval;bnodeval20,
+	int intval;21,
